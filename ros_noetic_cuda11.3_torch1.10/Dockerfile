@@ -114,10 +114,10 @@ RUN pip3 install torch==1.10.1+cu113 torchvision==0.11.2+cu113 torchaudio==0.10.
 # Jupyter Installation
 # -------------------------------------------------------
 
-RUN sudo pip3 install jupyter-client
-RUN sudo pip3 install jupyter-notebook
-RUN sudo pip3 install ipykernel
-RUN sudo pip3 install nbconvert
+RUN pip3 install jupyter-client
+RUN pip3 install notebook
+RUN pip3 install ipykernel
+RUN pip3 install nbconvert
 
 # -------------------------------------------------------
 # Default User
