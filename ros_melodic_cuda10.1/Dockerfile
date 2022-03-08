@@ -110,11 +110,6 @@ RUN apt-get update -q && \
 RUN pip install chainer==6.7.0 future
 
 # -------------------------------------------------------
-# Install pytorch
-# -------------------------------------------------------
-RUN pip install torch==1.4.0 torchvision==0.5.0
-
-# -------------------------------------------------------
 # Install cupy
 # -------------------------------------------------------
 RUN pip install cupy==6.7.0
@@ -145,5 +140,9 @@ RUN echo '' >> ~/.bashrc
 RUN echo '# ROS' >> ~/.bashrc
 RUN echo 'source /opt/ros/melodic/setup.bash' >> ~/.bashrc
 
+# -------------------------------------------------------
+# Install pytorch
+# -------------------------------------------------------
+RUN sudo pip install torch==1.4.0 torchvision==0.5.0
 
 CMD /bin/bash -c "cd $HOME && bash --login -c 'exec bash'"
