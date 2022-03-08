@@ -143,6 +143,7 @@ RUN echo 'source /opt/ros/melodic/setup.bash' >> ~/.bashrc
 # -------------------------------------------------------
 # Install pytorch
 # -------------------------------------------------------
-RUN sudo pip install torch==1.4.0 torchvision==0.5.0
+# RUN sudo pip install torch==1.4.0 torchvision==0.5.0
+# This line does not work, so you should install them manually
 
 CMD /bin/bash -c "cd $HOME && bash --login -c 'exec bash'"
