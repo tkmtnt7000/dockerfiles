@@ -1,1 +1,1 @@
-# dockerfiles
+# dockerfiles [![docker_build](https://github.com/tkmtnt7000/dockerfiles/actions/workflows/build.yaml/badge.svg)](https://github.com/tkmtnt7000/dockerfiles/actions/workflows/build.yaml) [![docker_push](https://github.com/tkmtnt7000/dockerfiles/actions/workflows/push.yaml/badge.svg)](https://github.com/tkmtnt7000/dockerfiles/actions/workflows/push.yaml)
