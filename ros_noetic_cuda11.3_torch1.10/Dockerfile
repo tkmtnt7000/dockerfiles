@@ -7,6 +7,7 @@ LABEL maintainer="tkmtnt7000 <tsukamoto@jsk.imi.i.u-tokyo.ac.jp>"
 #  - cuda 11.3.1
 #  - cudnn8
 #  - torch 1.10
+#  - jupyter
 
 ENV DEBIAN_FRONTEND=noninteractive
 
