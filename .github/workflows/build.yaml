@@ -15,7 +15,7 @@ jobs:
         tag:
           - jsk_enshu
           - ros_melodic_cuda9.2
-          - ros_melodic_cuda10.2
+          # - ros_melodic_cuda10.2
           - ros_noetic_cuda11.3_torch1.10
     name: build_${{ matrix.tag }}
     steps:
