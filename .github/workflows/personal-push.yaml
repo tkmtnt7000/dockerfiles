@@ -1,0 +1,30 @@
+name: Docker Image Push Workflow
+on:
+  push:
+    branches:
+      - 'master'
+  schedule:
+    - cron: '0 0 * * 0'
+jobs:
+  push_docker_image:
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      matrix:
+        tag:
+          - detic_ros
+    name: push_${{ matrix.tag }}
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      - name: Push Image
+        uses: docker/build-push-action@v2
+        with:
+          context: ./${{ matrix.tag }}
+          push: true
+          tags: tkmtnt7000/personal:${{ matrix.tag }}
