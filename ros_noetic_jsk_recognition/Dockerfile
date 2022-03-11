@@ -154,5 +154,6 @@ CMD /bin/bash -c "cd $HOME && bash --login -c 'exec bash'"
 RUN mkdir -p ~/catkin_ws/src
 RUN cd ~/catkin_ws/src && git clone https://github.com/jsk-ros-pkg/jsk_recognition.git
 RUN rosdep update
-RUN source /opt/ros/noetic/setup.bash && rosdep install --from-paths . -i -r -y
+RUN rosdep install --from-paths . -i -r -s
+RUN rosdep install --from-paths . -i -r -y
 RUN cd ~/catkin_ws && source /opt/ros/noetic/setup.bash && catkin build
