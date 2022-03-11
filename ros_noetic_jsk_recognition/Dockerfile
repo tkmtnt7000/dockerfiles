@@ -132,7 +132,7 @@ RUN echo 'ubuntu ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers
 
 USER ubuntu
 RUN rosdep update
-
+SHELL ["/bin/bash", "-c"]
 
 # -------------------------------------------------------
 # bashrc
