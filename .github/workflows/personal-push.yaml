@@ -13,7 +13,7 @@ jobs:
       matrix:
         tag:
           - detic_ros
-          - ros_noetic_jsk_recognition
+          # - ros_noetic_jsk_recognition
     name: push_${{ matrix.tag }}
     steps:
       - name: Check out repository code
