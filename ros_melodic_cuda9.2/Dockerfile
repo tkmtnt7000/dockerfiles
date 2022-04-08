@@ -114,6 +114,21 @@ RUN pip install -U \
         "pip==9.0.3"
 
 # -------------------------------------------------------
+# Jupyter Installation
+# -------------------------------------------------------
+
+RUN pip3 install jupyter-client
+RUN pip3 install notebook
+RUN pip3 install ipykernel
+RUN pip3 install nbconvert
+
+# -------------------------------------------------------
+# gdown Installation
+# -------------------------------------------------------
+RUN pip3 install gdown
+
+
+# -------------------------------------------------------
 # Default User
 # -------------------------------------------------------
 RUN groupadd -g 1000 developer && \
