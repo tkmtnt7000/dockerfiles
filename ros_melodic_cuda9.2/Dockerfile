@@ -91,6 +91,7 @@ RUN apt-get update -q && \
         python \
         python-dev \
         python-pip \
+        python3-pip \
         python-setuptools \
         rlwrap \
         software-properties-common \
