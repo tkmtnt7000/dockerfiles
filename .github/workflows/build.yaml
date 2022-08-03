@@ -14,8 +14,8 @@ jobs:
       matrix:
         tag:
           - jsk_enshu
-          - ros_melodic_cuda9.2
-          - ros_melodic_cuda10.1
+          # - ros_melodic_cuda9.2
+          # - ros_melodic_cuda10.1
           # - ros_melodic_cuda10.2
           - ros_noetic_cuda11.3_torch1.10
           - cuda11.1_torch1.10
