@@ -1,9 +1,9 @@
-FROM nvidia/cudagl:11.3.0-devel-ubuntu20.04
+FROM nvidia/cudagl:11.1.1-devel-ubuntu20.04
 
 LABEL maintainer="tkmtnt7000 <tsukamoto@jsk.imi.i.u-tokyo.ac.jp>"
 
 # Ubuntu 20.04 Image with
-#  - cuda 11.3.1
+#  - cuda 11.1.1
 #  - cudnn8
 #  - torch 1.10
 #  - jupyter
